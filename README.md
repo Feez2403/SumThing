@@ -209,11 +209,11 @@ build/web/
 
 ## TODO
 
-- Test with IOS
+- Support for IOS
 - Add support for other currencies (for now only in CHF)
 - Save scanned values to a database or file for later use
 - Show relevant error messages when scanning fails
 
 ## Credits
 
-[QR code scanner](https://pub.dev/packages/mobile_scanner)
+We use the awesome [Mobile Scanner pluggin](https://pub.dev/packages/mobile_scanner)
