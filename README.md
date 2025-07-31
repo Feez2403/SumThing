@@ -18,12 +18,18 @@ This app scans the values of QR-bills to extract monetary amounts from the scann
 - A device or emulator with camera support
 - For web, a modern browser with camera access enabled
 
-### Running the App
-
-1. Navigate to the sum_thing directory:
+### Clone the repository
 
 ```bash
-cd sum_thing
+git clone https://github.com/Feez2403/SumThing.git
+```
+
+### Running the App
+
+Open the repository
+
+```bash
+cd SumThing
 ```
 
 2. Get dependencies:
@@ -38,7 +44,7 @@ flutter pub get
 flutter run
 ```
 
-You can run the app on Android, iOS, or Web platforms.
+For now, you can run the app on Android or Web platforms. (iOS will appear as soon sa I have the appropriate hardware)
 
 ### Create a build and release the app
 
@@ -51,15 +57,6 @@ Ensure your app version and build number are up to date:
 ```yaml
 version: 1.0.0+1
 ```
-
----
-
-##### Minimize Debug Code
-
-Remove or conditionally compile out any:
-- `debugPrint`
-- `print`
-- Test or sample data
 
 ---
 
@@ -83,7 +80,6 @@ Output will be in:
 ```
 build/web/
 ```
-
 
 #### 📱 Android Release Build
 
@@ -130,11 +126,13 @@ android {
 ##### 2. Build APK or AAB
 
 **APK Build:**
+
 ```bash
 flutter build apk --release
 ```
 
 **AAB Build (Recommended for Play Store):**
+
 ```bash
 flutter build appbundle --release
 ```
@@ -148,6 +146,8 @@ build/app/outputs/
 ---
 
 #### 🍏 iOS Release Build
+
+iOS is not supported right now, but we will provide support in a future version.
 
 ##### 1. Open the iOS Project in Xcode
 
@@ -200,7 +200,7 @@ build/web/
 ## Code Overview
 
 - `main.dart` contains the main app and the QR scanner widget.
-- The QR scanner uses the `qr_code_scanner` plugin to access the camera and scan QR codes.
+- This app uses the `mobile_scanner` plugin to access the camera and scan QR codes.
 
 ## Notes
 
@@ -208,6 +208,7 @@ build/web/
 - Make sure to grant camera permissions when prompted.
 
 ## TODO
+
 - Test with IOS
 - Add support for other currencies (for now only in CHF)
 - Save scanned values to a database or file for later use
@@ -215,4 +216,4 @@ build/web/
 
 ## Credits
 
-QR scanner flutter app: https://github.com/juliuscanute/qr_code_scanner
+[QR code scanner](https://pub.dev/packages/mobile_scanner)
