@@ -44,7 +44,7 @@ flutter pub get
 flutter run
 ```
 
-For now, you can run the app on Android or Web platforms. (iOS will appear as soon sa I have the appropriate hardware)
+For now, you can run the app on Android or Web platforms. (iOS will appear as soon as I have the appropriate hardware)
 
 ### Create a build and release the app
 
